@@ -1,4 +1,4 @@
-package Test;
+package GUI;
 
 import java.awt.EventQueue;
 
@@ -15,7 +15,7 @@ import javax.swing.UIManager;
 import javax.swing.border.MatteBorder;
 import java.awt.Button;
 
-public class test extends JFrame {
+public class MainMenuGUI extends JFrame {
 
 	private JPanel contentPane;
 	/**
@@ -25,7 +25,7 @@ public class test extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					test frame = new test();
+					MainMenuGUI frame = new MainMenuGUI();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,7 +37,7 @@ public class test extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public test() {
+	public MainMenuGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 900, 900);
 		contentPane = new JPanel();
